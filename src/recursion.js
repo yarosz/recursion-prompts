@@ -60,16 +60,21 @@ var isEven = function(n) {
   } else {
     return isEven(n-2);
   }
-  // keep doing that until number equals 1
-    // and return false
-  // keep doing that until the number equal 0
-    // and return true
 };
 
 // 5. Sum all integers below a given integer.
 // sumBelow(10); // 45
 // sumBelow(7); // 21
 var sumBelow = function(n) {
+  if (n === n) {
+    var sum = 0;
+  }
+  console.log(sum)
+  if (n === 0) {
+    return sum;
+  } else {
+    return sum += sumBelow(n - 1);
+  }
 };
 
 // 6. Get the integers within a range (x, y).
